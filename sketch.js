@@ -16,7 +16,7 @@ var chart = new Chart(ctx, {
 		order: 0,
             },
 	    {
-		label: 'TSI8130A Sensitivity',
+		label: 'Photometer Sensitivity',
 		fill: true,
 		backgroundColor: 'rgba(150,150,150,0.5)',
 		borderColor: 'rgba(56,108,176,0.0)',
@@ -292,9 +292,9 @@ function updateText(){
     textStyle(NORMAL);
     text("Total Filtration Efficiency (SMPS):",10,157.5);
     text(addunit(FTOT1,'%'),275,157.5);
-    text("Total Filtration Efficiency (TSI8130A):",10,182.5);
+    text("Total Filtration Efficiency (Photometer):",10,182.5);
     text(addunit(FTOT2,'%'),275,182.5);  
-    text("Methodological Bias (SMPS-8130A):",10,207.5);
+    text("Methodological Bias (SMPS-Photometer):",10,207.5);
     text(addunit(FTOT1-FTOT2,'%'),275,207.5);
     text("Pressure Drop:",10,232.5);
     text(addunit(DP,'Pa'),275,232.5);  
