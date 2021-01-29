@@ -35,7 +35,7 @@ var chart = new Chart(ctx, {
 		label: '(Di-)Electrophoretic',
 		fill: true,
 		backgroundColor: 'rgb(127, 201, 127)',
-		borderColor: 'rgb(127,201,127)',
+		borderColor: 'rgba(127,201,127,0)',
 		data: [],
 		order: 2,
             },
@@ -43,7 +43,7 @@ var chart = new Chart(ctx, {
 		label: 'Diffusiophoretic',
 		fill: true,
 		backgroundColor: 'rgb(253,192,134)',
-		borderColor: 'rgb(253,192,134)',
+		borderColor: 'rgba(253,192,134,0)',
 		data: [],
 		order: 3,
             },
@@ -51,7 +51,7 @@ var chart = new Chart(ctx, {
 		label: 'Interception',
 		fill: true,
 		backgroundColor: 'rgb(255,255,153)',
-		borderColor: 'rgb(255,255,153)',
+		borderColor: 'rgba(255,255,153,0)',
 		data: [],
 		order: 4,
             },
@@ -59,7 +59,7 @@ var chart = new Chart(ctx, {
 		label: 'Impaction',
 		fill: true,
 		backgroundColor: 'rgb(56,108,176)',
-		borderColor: 'rgb(56,108,176)',
+		borderColor: 'rgba(56,108,176,0)',
 		data: [],
 		order: 5,
             },
@@ -374,15 +374,23 @@ function updateChart() {
     for(let i=0;i<X.length;i++){
 	if ((X[i]*1e9<2500) & (Y2[i]>YMIN)){
 	    chart.data.datasets[3].data.push({x:X[i]*1e9,y:Y2[i]});
+	} else if (X[i]*1e9<2500){
+	    chart.data.datasets[3].data.push({x:X[i]*1e9,y:YMIN});
 	}
 	if ((X[i]*1e9<2500) & (Y3[i]>YMIN)){
 	    chart.data.datasets[4].data.push({x:X[i]*1e9,y:Y3[i]});
+	} else if (X[i]*1e9<2500){
+	    chart.data.datasets[4].data.push({x:X[i]*1e9,y:YMIN});
 	}
 	if ((X[i]*1e9<2500) & (Y4[i]>YMIN)){
 	    chart.data.datasets[5].data.push({x:X[i]*1e9,y:Y4[i]});
+	} else if (X[i]*1e9<2500){
+	    chart.data.datasets[5].data.push({x:X[i]*1e9,y:YMIN});
 	}
 	if ((X[i]*1e9<2500) & (Y5[i]>YMIN)){
 	    chart.data.datasets[6].data.push({x:X[i]*1e9,y:Y5[i]});
+	} else if (X[i]*1e9<2500){
+	    chart.data.datasets[6].data.push({x:X[i]*1e9,y:YMIN});
 	}
 	tempy1 = (Y6[i]/YMAX1)*(100.0 - YMIN) + YMIN;
         tempy2 = (Y7[i]/YMAX2)*(100.0 - YMIN) + YMIN;
