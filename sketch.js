@@ -264,18 +264,18 @@ function updateValues(){
 
 
 function updateText(){
-        // Display Parameters
+    // Display Parameters
     textStyle(BOLD);
     text("Parameters",10,15);
     textStyle(NORMAL);
     text("Fiber Charge Density: ",10,32.5);
-    text(addunit(_sigma*1e6,'Î¼C m⁻²'),chargeslider.x+chargeslider.width,32.5);
+    text(addunit(_sigma*1e6,'μC m⁻²'),chargeslider.x+chargeslider.width,32.5);
     text("Filter Thickness: ",10,57.5);
     text(addunit(_t*1e3,'mm'),thicknessslider.x+thicknessslider.width,57.5);
     text("Dielectric Constant (particle): ",10,82.5);
     text(addunit(_ep,''),epslider.x+epslider.width,82.5);
     text("Fiber Diameter: ",10,107.5);
-    text(addunit(_df*1e6,'Î¼m'),fiberslider.x+fiberslider.width,107.5);
+    text(addunit(_df*1e6,'μm'),fiberslider.x+fiberslider.width,107.5);
     text("Solidity:",510,32.5);
     text(addunit(100*_a,'%'),aslider.x+aslider.width,32.5);
     text("Particle Density:",510,57.5);
