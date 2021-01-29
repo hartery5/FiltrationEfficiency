@@ -1,5 +1,5 @@
 # FiltrationEfficiency
-Estimates the filtration efficiency of spectrum of idealized fibrous filters.
+Estimates the filtration efficiency spectrum of idealized fibrous filters.
 
 [Check it out!](https://hartery5.github.io/FiltrationEfficiency/)
 
