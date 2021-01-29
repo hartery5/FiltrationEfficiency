@@ -264,44 +264,43 @@ function updateValues(){
 
 
 function updateText(){
-    // Display Parameters
+        // Display Parameters
     textStyle(BOLD);
     text("Parameters",10,15);
     textStyle(NORMAL);
-    text("Charge Density: ",10,32.5);
-    text(addunit(_sigma*1e6,'μC m^-2'),chargeslider.x+chargeslider.width,32.5);
+    text("Fiber Charge Density: ",10,32.5);
+    text(addunit(_sigma*1e6,'Î¼C m⁻²'),chargeslider.x+chargeslider.width,32.5);
     text("Filter Thickness: ",10,57.5);
     text(addunit(_t*1e3,'mm'),thicknessslider.x+thicknessslider.width,57.5);
     text("Dielectric Constant (particle): ",10,82.5);
     text(addunit(_ep,''),epslider.x+epslider.width,82.5);
     text("Fiber Diameter: ",10,107.5);
-    text(addunit(_df*1e6,'μm'),fiberslider.x+fiberslider.width,107.5);
+    text(addunit(_df*1e6,'Î¼m'),fiberslider.x+fiberslider.width,107.5);
     text("Solidity:",510,32.5);
     text(addunit(100*_a,'%'),aslider.x+aslider.width,32.5);
     text("Particle Density:",510,57.5);
-    text(addunit(_rhop,'kg m^-3'),rhoslider.x+rhoslider.width,57.5);
+    text(addunit(_rhop,'kg m⁻³'),rhoslider.x+rhoslider.width,57.5);
     text("Dielectric Constant (fiber):",510,82.5);
     text(addunit(_ef,''),efslider.x+efslider.width,82.5);
     text("Particle Velocity:",510,107.5);
-    text(addunit(_U*100.,'cm s^-1'),aslider.x+aslider.width,107.5);
+    text(addunit(_U*100.,'cm s⁻¹'),aslider.x+aslider.width,107.5);
        
-
     // Display Diagnostics
     textStyle(BOLD);
     text("Results",10,140);
     textStyle(NORMAL);
     text("Total Filtration Efficiency (SMPS):",10,157.5);
-    text(addunit(FTOT1,'%'),300,157.5);
-    text("Total Filtration Efficiency (Photometer):",10,182.5);
-    text(addunit(FTOT2,'%'),300,182.5);  
-    text("Methodological Bias (SMPS-Photometer):",10,207.5);
-    text(addunit(FTOT1-FTOT2,'%'),300,207.5);
+    text(addunit(FTOT1,'%'),275,157.5);
+    text("Total Filtration Efficiency (TSI8130A):",10,182.5);
+    text(addunit(FTOT2,'%'),275,182.5);  
+    text("Methodological Bias (SMPS-8130A):",10,207.5);
+    text(addunit(FTOT1-FTOT2,'%'),275,207.5);
     text("Pressure Drop:",10,232.5);
-    text(addunit(DP,'Pa'),300,232.5);  
+    text(addunit(DP,'Pa'),275,232.5);  
     text("Most Penetrating Particle Size:",10,257.5);
-    text(addunit(MPPS*1e9,'nm'),300,257.5);
+    text(addunit(MPPS*1e9,'nm'),275,257.5);
     text("Flow Rate:",10,282.5);
-    text(addunit(_U*100.*141.8/16.67,'L min^-1'),300,282.5);
+    text(addunit(_U*100.*141.8/16.67,'L min⁻¹'),275,282.5);
 
     // Display Test Result
     textStyle(BOLD);
