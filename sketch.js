@@ -301,15 +301,6 @@ function updateText(){
     text(addunit(MPPS*1e9,'nm'),275,257.5);
     text("Flow Rate:",10,282.5);
     text(addunit(_U*100.*141.8/16.67,'L min⁻¹'),275,282.5);
-
-    // Display Test Result
-    textStyle(BOLD);
-    if ((DP<343.) & (FTOT1>95.0) & (FTOT2>95.0)){
-	text('Pass!',10,315);
-    } else {
-	text('Fail!',10,315);
-    }
-    textStyle(NORMAL);
 }
 
 function updateChart() {
