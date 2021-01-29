@@ -4,16 +4,16 @@ Estimates the filtration efficiency of spectrum of idealized fibrous filters.
 [Check it out!](https://hartery5.github.io/FiltrationEfficiency/)
 
 ## Description
-This demonstration allows the user to observe how different mechanisms of filtration are affected by:
-1. Material Parameters (solidity, fiber diameter, thickness, dielectric constant, surface charge density), 
-2. Particle Parameters (particle size, density, dielectric constant), and 
+This demonstration allows the user to observe how the different mechanisms of filtration by fibrous filters are affected by:
+1. Material Parameters (e.g. solidity, fiber diameter, thickness, dielectric constant, surface charge density), 
+2. Particle Parameters (e.g. particle size, density, dielectric constant), and 
 3. Test Parameters (particle velocity). 
 
-The calculations assume that the fibrous filter is being tested with a specific size distribution of aerosol particles. The size distribution is assumed to be log-normal, with a count median diameter of 75 nm, and a geometric standard deviation of 1.86. It is assumed that surface charges on the particles follow the Boltzmann distribution (as is the case for particles exiting a Bipolar Diffusion charger) [1].
+The calculations assume that the fibrous filter is being tested with a specific size distribution of aerosol particles. The size distribution is assumed to be log-normal, with a count median diameter of 75 nm, and a geometric standard deviation of 1.86. It is assumed that the probability distribution of surface charges on the particles follows the theory of Fuchs (1963) and Gunn (1956) (as is the case for particles exiting a bipolar diffusion charger) [1].
 
 Calculations of the amount of material scavenged by diffusiophoresis, interception and impaction are based on [2]. Calculations of the amount of material scavenged by both dielectrophoresis and electrophoresis are based on [3].
 
-This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how the particle spectrum is measured. While the total filtration efficiency measured by scanning mobility particle size spectrometers (SMPS's) will be sensitive directly to the test particle distribution, the total filtration efficiency measured by a photometer will sensitive to much coarser particulate as a result of the fundamental nature of light scattering. Estimations of the sensitivity of a photometer are based on calculations of scattering intensity from [4].
+This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how the particle spectrum is measured. While the total filtration efficiency calculated from scanning mobility particle size spectrometer (SMPS) measurements will be sensitive directly to the test particle distribution, the total filtration efficiency calculated from photometric measurements will be sensitive to much coarser particulate as a result of the fundamental nature of light scattering. Estimations of the sensitivity of a photometer are based on calculations of scattering intensity from [4].
 
 Several non-idealities including (but not limited to) aerodynamic particle shape factors, light scattering factors to account for geometric shape, non-singular fiber distribution, etc. have not been accounted for. This is meant to be a (relatively) simple demonstration :smile:. The code is provided with no warranty of correctness.
 
@@ -42,7 +42,7 @@ Self-descriptive
 As for the particle.
 
 #### Particle Velocity
-The velocity of the particle through the respirator. Corresponds to the flow rate of air through a respirator with a surface area of ~150 cm^2.
+Assumed to be equal to the average air velocity through the respirator. While this is the fundamental physical variable, it is more common to think of filtration in terms of flow rate. A calculation of the mean flow rate of air through a filter with a surface area of ~140 cm^2 is provided.
 
 ## References
 
