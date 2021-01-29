@@ -1,0 +1,13 @@
+html, body {
+    margin: 10;
+    padding: 10;
+}
+
+canvas {
+    display: block;
+}
+
+#myContainer {
+    width: 1200px;
+    height: 350px;
+}
