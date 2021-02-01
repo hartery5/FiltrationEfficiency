@@ -17,7 +17,7 @@ Based on these parameters, calculations of the amount of material scavenged by d
 
 This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how particles are detected. The gray spectra highlight the measurement sensitivity of two different methods of detecting particles, "Scanning Mobility Particle Size Spectrometry" (SMPS) and "Photometric". The choice of particle detection method will mean that the "total filtration efficiency" is only valid for a certain range of particles.
 
-For more detailed information, consult the Technical Summary. The code is provided with no warranty of correctness.
+For more detailed information, consult the [Technical Summary](https://github.com/hartery5/FiltrationEfficiency/blob/main/TECHNICALSUMMARY.md). The code is provided with no warranty of correctness.
 
 ## User-Variable Parameters
 The user may vary the following parameters:
