@@ -1,4 +1,4 @@
-# Filtration Efficiency
+# Filtration Efficiency of Fibrous Respirators
 This interactive graph estimates the filtration efficiency spectrum of idealized fibrous filters. The goal of the experiment is to "design" a respirator which is both efficient at removing particles from the incoming air, but still breathable.
 
 **Can you design a respirator that filters 95% of particles AND has a pressure drop lower than 343 Pa?**
@@ -18,7 +18,7 @@ Watch how the filtration efficiency spectrum changes as you vary the input param
 
 This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how particles are detected. The gray spectra highlight the measurement sensitivity of two different methods of detecting particles, "Scanning Mobility Particle Size Spectrometry" (SMPS) and "Photometric". The choice of particle detection method will mean that the "total filtration efficiency" is only valid for a certain range of particles. **Can you design a respirator that will filter more than 95% of particles, no matter which method is measured?**
 
-For more detailed information, consult the [Technical Summary](https://github.com/hartery5/FiltrationEfficiency/blob/main/TECHNICALSUMMARY.md). The code is provided with no warranty of correctness.
+For more detailed information, consult the [Technical Summary](https://github.com/hartery5/FiltrationEfficiency/blob/main/TECHNICALSUMMARY.md). The code is provided with no warranty of correctness. Real world respirators will behave differently due to non-idealities not captured by this model.
 
 ## User-Variable Parameters
 In order to predict the number of particles that are lost to the respirator as air flows through it, several parameters are needed:
