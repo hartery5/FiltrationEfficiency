@@ -16,6 +16,7 @@ These parameters will dictate how particles are lost to the respirator. In gener
 2. interception by fibers, 
 3. diffusion onto fibers (diffusiophoresis), 
 4. scavenging by the fiber's electric field (electrophoresis & dielectrophoresis). 
+
 Impaction only occurs for the most massive particles, as they carry more momentum, and are less able to navigate the porous structure of the respirator. Interception occurs for particles which are able navigate the porous structure of the respirator, but are still large enough that they will collide with a fiber as they zoom by. Diffusiophoresis is mostly restricted to the smallest particles, which are so small that their trajectory can be altered by the Brownian motion of the surrounding air. As a result of their trajectory being randomly altered by collisions with air molecules, these particles will randomly deposit onto fibers. Lastly, the fibers of a respirator may be charged themseleves, creating electric fields within the respirator. Particles of most sizes will be attracted towards the fibers when an electric field is present.
 
 Based on these parameters, calculations of the amount of material scavenged by diffusiophoresis, interception and impaction are based on models presented in [2]. Calculations of the amount of material scavenged by both dielectrophoresis and electrophoresis are based on the model of Brown [3].
