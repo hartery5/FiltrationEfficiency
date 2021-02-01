@@ -17,11 +17,12 @@ Per the current Code of Federal Regulations (CFR), respirators assessed for the 
 
 The separation in the test particle spectrum and the sensitivity of the photometer leads to known deviations in total fitlration efficiency between photometric and number-based counting systems [6]. If the minimum in filtration efficiency is <100 nm, then the filtration efficiency calculated from CPC or SMPS based measurements will be lower than the filtration efficiency calculated from photometric based measurements (and vice versa). 
 
+A further complication to this calculation is that the CFR stipulate that the particles must be neutralized. In practice this is accomplished with an "aerosol neutralizer", however this is a misnomer. In truth, an aerosol neutralizer is ~50% efficient at neutralizing particles 75 nm in size. The neutralizer is more efficient for smaller particles, and less efficient for larger particles. As a result, there is still a sizeable fraction of the particle size distribution which is charged. Thus, in order to know how many particles are lost due to electrophoresis and dielectrophoresis, the fraction of charged particles needs to be known a priori. Fortunately, the fraction of charged particles exiting an aerosol neutralizer is well-known and can be calculated according to Wiedensohler (1988).
+
 ¹A notable exception is the sun photometer, which uses the sun as the light source to measure the optical depth of the atmosphere.
 
 ## Questions
 Here are some research questions for you to consider:
 
 1. What test conditions would remove the methodological bias between the CPC- and photometer-based measurements?
-2. 
-
+2. The "total filtration efficiency" is also a function of the charge distribution across the aerosol particles. What is the expected distribution of charges in reality?
