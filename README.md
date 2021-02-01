@@ -1,5 +1,5 @@
 # FiltrationEfficiency
-Estimates the filtration efficiency spectrum of idealized fibrous filters.
+This interactive graph estimates the filtration efficiency spectrum of idealized fibrous filters. The goal of the experiment is to "design" a respirator which is both efficient (total filtration efficiency greater than 95%) but still breathable (pressure drop smaller than 343 Pa).
 
 [Check it out!](https://hartery5.github.io/FiltrationEfficiency/)
 
@@ -9,40 +9,40 @@ This demonstration allows the user to observe how the different mechanisms of fi
 2. Particle Parameters (e.g. particle size, density, dielectric constant), and 
 3. Test Parameters (particle velocity). 
 
-The calculations assume that the fibrous filter is being tested with a specific size distribution of aerosol particles. The size distribution is assumed to be log-normal, with a count median diameter of 75 nm, and a geometric standard deviation of 1.86. It is assumed that the probability distribution of surface charges on the particles follows the theory of Fuchs (1963) and Gunn (1956) (as is the case for particles exiting a bipolar diffusion charger) [1].
+These parameters will dictate how particles are lost to the respirator. In general, a particle is lost to a respirator via five mechanisms: (1) direct impaction onto fibers, (2) interception by fibers, (3) diffusion onto fibers (diffusiophoresis), (4 & 5) scavenging by the fiber's electric field (electrophoresis & dielectrophoresis). Impaction only occurs for the most massive particles, as they carry more momentum, and are less able to navigate the porous structure of the respirator. Interception occurs for particles which are able navigate the porous structure of the respirator, but are still large enough that they will collide with a fiber as they zoom by. Diffusiophoresis is mostly restricted to the smallest particles, which are so small that their trajectory can be altered by the Brownian motion of the surrounding air. As a result of their trajectory being randomly altered by collisions with air molecules, these particles will randomly deposit onto fibers. Lastly, the fibers of a respirator may be charged themseleves, creating electric fields within the respirator. Particles of most sizes will be attracted towards the fibers when an electric field is present.
 
-Calculations of the amount of material scavenged by diffusiophoresis, interception and impaction are based on [2]. Calculations of the amount of material scavenged by both dielectrophoresis and electrophoresis are based on [3].
+Based on these parameters, calculations of the amount of material scavenged by diffusiophoresis, interception and impaction are based on models presented in [2]. Calculations of the amount of material scavenged by both dielectrophoresis and electrophoresis are based on the model of Brown [3].
 
-This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how the particle spectrum is measured. While the total filtration efficiency calculated from scanning mobility particle size spectrometer (SMPS) measurements will be sensitive directly to the test particle distribution, the total filtration efficiency calculated from photometric measurements will be sensitive to much coarser particulate as a result of the fundamental nature of light scattering. Estimations of the sensitivity of a photometer are based on calculations of scattering intensity from [4], based on a laser wavelength of 658 nm.
+This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how particles are detected. The gray spectra highlight the measurement sensitivity of two different methods of detecting particles, "Scanning Mobility Particle Size Spectrometry" (SMPS) and "Photometric". The choice of particle detection method will mean that the "total filtration efficiency" is only valid for a certain range of particles.
 
-Several non-idealities including (but not limited to) aerodynamic particle shape factors, light scattering factors to account for geometric shape, non-singular fiber distribution, etc. have not been accounted for. This is meant to be a (relatively) simple demonstration :smile:. The code is provided with no warranty of correctness.
+For more detailed information, consult the Technical Summary. The code is provided with no warranty of correctness.
 
 ## User-Variable Parameters
 The user may vary the following parameters:
 
 #### Charge Density
-This parameter describes the density of charge located at the surface of the fibers. This model assumes that the fibers are line dipoles (e.g. thermoelectrets).
+This parameter describes how densely charges are distributed across the surface of the fibers.
 
 #### Filter Thickness
-The thickness of the filter parallel to the mean flow.
+The thickness of the filter.
 
 #### Dielectric Constant (particle)
-The static dielectric constant of the particle. Describes charge separation within a particle when embedded in an external field (mostly).
+A physical parameter which describes how a neutral particle will behave in a static electric field. 
 
 #### Fiber Diameter
 Self-descriptive
 
 #### Solidity
-The volume percent of material that the fibers occupy as compared to a homogeneous slab of the filter with the same surface area and thickness.
+Related to the porosity (Solidity = 100 - Porosity). 
 
 #### Particle Density
 Self-descriptive
 
 #### Dielectric Constant (fiber)
-As for the particle.
+See description for "dielectric constant (particle)."
 
 #### Particle Velocity
-Assumed to be equal to the average air velocity through the respirator. While this is the fundamental physical variable, it is more common to think of filtration in terms of flow rate. A calculation of the mean flow rate of air through a filter with a surface area of ~140 cm^2 is provided.
+Assumed to be equal to the average air velocity through the respirator. However, it is more common to think of filtration in terms of flow rate. A calculation of the mean flow rate of air through a filter with a surface area of ~140 cm^2 is provided.
 
 ## References
 
