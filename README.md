@@ -21,7 +21,7 @@ Impaction only occurs for the most massive particles, as they carry more momentu
 
 Based on these parameters, calculations of the amount of material scavenged by diffusiophoresis, interception and impaction are based on models presented in [2]. Calculations of the amount of material scavenged by both dielectrophoresis and electrophoresis are based on the model of Brown [3].
 
-This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how particles are detected. The gray spectra highlight the measurement sensitivity of two different methods of detecting particles, "Scanning Mobility Particle Size Spectrometry" (SMPS) and "Photometric". The choice of particle detection method will mean that the "total filtration efficiency" is only valid for a certain range of particles. **Can you design a respirator that will filter more than 95% of particles, no matter how it is measured?**
+This demonstration is also meant to highlight that estimations of the total filtration efficiency will differ based on how particles are detected. The gray spectra highlight the measurement sensitivity of two different methods of detecting particles, "Scanning Mobility Particle Size Spectrometry" (SMPS) and "Photometric". The choice of particle detection method will mean that the "total filtration efficiency" is only valid for a certain range of particles. **Can you design a respirator that will filter more than 95% of particles, no matter which method is measured?**
 
 For more detailed information, consult the [Technical Summary](https://github.com/hartery5/FiltrationEfficiency/blob/main/TECHNICALSUMMARY.md). The code is provided with no warranty of correctness.
 
