@@ -11,7 +11,7 @@ This demonstration allows the user to observe how the different mechanisms of fi
 2. Particle Parameters (e.g. particle size, density, dielectric constant), and 
 3. Test Parameters (particle velocity). 
 
-These parameters will dictate how particles are lost to the respirator. In general, a particle is lost to a respirator via four mechanisms: 
+These parameters will dictate how particles are lost to the respirator. A complete description of the physical parameters is given later in the document. In general, a particle is lost to a respirator via four mechanisms: 
 1. direct impaction onto fibers, 
 2. interception by fibers, 
 3. diffusion onto fibers (diffusiophoresis), 
