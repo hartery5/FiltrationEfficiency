@@ -1,7 +1,9 @@
 # FiltrationEfficiency
-This interactive graph estimates the filtration efficiency spectrum of idealized fibrous filters. The goal of the experiment is to "design" a respirator which is both efficient (total filtration efficiency greater than 95%) but still breathable (pressure drop smaller than 343 Pa).
+This interactive graph estimates the filtration efficiency spectrum of idealized fibrous filters. The goal of the experiment is to "design" a respirator which is both efficient at removing particles from the incoming air, but still breathable.
 
-[Check it out!](https://hartery5.github.io/FiltrationEfficiency/)
+**Can you design a respirator that filters 95% of particles AND has a pressure drop lower than 343 Pa?**
+
+[Try it out!](https://hartery5.github.io/FiltrationEfficiency/)
 
 ## Description
 This demonstration allows the user to observe how the different mechanisms of filtration by fibrous filters are affected by:
