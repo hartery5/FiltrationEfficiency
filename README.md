@@ -1,5 +1,5 @@
 # Filtration Efficiency of Fibrous Respirators
-This interactive graph estimates the filtration efficiency spectrum of idealized fibrous filters. The goal of the experiment is to "design" a respirator which is both efficient at removing particles from the incoming air, but still breathable.
+This interactive graph estimates the filtration efficiency spectrum of idealized fibrous filters. The goal of the experiment is to "design" a respirator which is both efficient at removing particles from the incoming air and breathable.
 
 **Can you design a respirator that filters 95% of particles AND has a pressure drop lower than 343 Pa?**
 
