@@ -1,6 +1,6 @@
 # Technical Summary
 ## Abstract
-This document is intended to be a supplementary guide for undergraduate physics students and above. ( WORK IN PROGRESS)
+This document is intended to be a supplementary guide for formatting a lecture for undergraduate physics students and above. ( WORK IN PROGRESS)
 
 ## Theory
 ### Impaction
