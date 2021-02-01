@@ -26,8 +26,6 @@ This demonstration is also meant to highlight that estimations of the total filt
 For more detailed information, consult the [Technical Summary](https://github.com/hartery5/FiltrationEfficiency/blob/main/TECHNICALSUMMARY.md). The code is provided with no warranty of correctness.
 
 ## User-Variable Parameters
-The user may vary the following parameters:
-
 #### Charge Density
 This parameter describes how densely charges are distributed across the surface of the fibers.
 
