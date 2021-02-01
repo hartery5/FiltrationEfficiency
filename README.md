@@ -50,7 +50,7 @@ Self-descriptive
 See description for "dielectric constant (particle)."
 
 #### Particle Velocity
-Assumed to be equal to the average air velocity through the respirator. However, it is more common to think of filtration in terms of flow rate. A calculation of the mean flow rate of air through a filter with a surface area of ~140 cm^2 is provided.
+Assumed to be equal to the average air velocity through the respirator. However, it is more common to think of filtration in terms of flow rate. A calculation of the mean flow rate of air through a filter with a surface area of ~140 cm² is provided.
 
 ## References
 
