@@ -3,7 +3,7 @@ This interactive graph estimates the filtration efficiency spectrum of idealized
 
 **Can you design a respirator that filters 95% of particles AND has a pressure drop lower than 343 Pa?**
 
-[Try it out!](https://hartery5.github.io/FiltrationEfficiency/)
+[**Try it out!**](https://hartery5.github.io/FiltrationEfficiency/)
 
 ## Description
 This demonstration allows the user to observe how different mechanisms of filtration scavenge differently sized particles in the air. In general, a particle is lost to a respirator via four mechanisms: 
