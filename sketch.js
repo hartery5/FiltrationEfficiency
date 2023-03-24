@@ -562,11 +562,11 @@ function electrophoresis(dp, n){
     // Note 2: Cunningham Slip correction added (citation needed)
     // (Brown, 1981)
     let Npq = _sigma*abs(n)*C*Cc/(3.0*pi*mu*(1+_ef)*_U*e0*dp);
-    //if (E_el<0.1){
-    //	E_el = 0.82*Npq;
-    //} else {
-    E_el = 0.57*pow(Npq,0.83);
-    //}
+    if (E_el<0.1){
+      E_el = 0.82*Npq;
+    } else {
+      E_el = 0.57*pow(Npq,0.83);
+    }
 }
     
 function dielectrophoresis(dp){
@@ -575,11 +575,11 @@ function dielectrophoresis(dp){
     // Note 2: Cunningham slip correction added (citation needed)
     // (Brown, 1981)
     let Np0 = (1.0/3.0)*((_ep-1.0)/(_ep+2.0))*pow(_sigma,2)*pow(dp,2)*Cc/(e0*pow(1.0+_ef,2)*_df*mu*_U);
-    //if (Np0>1.0){
-    E_el = 0.47*pow(Np0,0.4);
-    //} else {
-    //	E_el = pi*Np0;
-    //}
+    if (Np0>1.0){
+      E_el = 0.47*pow(Np0,0.4);
+    } else {
+      E_el = pi*Np0;
+    }
 }
 
 function interception(dp){
