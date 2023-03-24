@@ -574,7 +574,7 @@ function dielectrophoresis(dp){
     // Note 1: Parameterization needs smoothing across valid range
     // Note 2: Cunningham slip correction added (citation needed)
     // (Brown, 1981)
-    let Np0 = (2.0/3.0)*((_ep-1.0)/(_ep+2.0))*pow(_sigma,2)*pow(dp,2)*Cc/(e0*pow(1.0+_ef,2)*pow(_df,3)*mu*_U);
+    let Np0 = (2.0/3.0)*((_ep-1.0)/(_ep+2.0))*pow(_sigma,2)*pow(dp,2)*Cc/(e0*pow(1.0+_ef,2)*_df*mu*_U);
     E_el = 0.771*Np0/(1 + 0.973*pow(Ku*Np0,0.785));
 }
 
