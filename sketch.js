@@ -417,7 +417,7 @@ function updateData(){
 	R = x/_df;
 	diffusivity(x);
 	peclet(x);
-	for(let n=-10; n<11; n++){
+	for(let n=-50; n<51; n++){
 	    if(abs(n)>0){
 		electrophoresis(x, n);
 	    } else {
