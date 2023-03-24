@@ -593,7 +593,7 @@ function impaction(dp){
 function filtration(E){
     // Particle filtration based on efficiency E.
     // (Baron & Willeke)
-    let eta = 1.0 - exp(-4*_a*E*_t/(pi*_df*(_a-1)));
+    let eta = 1.0 - exp(-4*_a*E*_t/(pi*_df*(1-_a)));
     return eta
 }
 
